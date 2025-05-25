@@ -3,13 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My GitHub Page</title>
+  <title>My GitHub Page with GSAP</title>
   <style>
     body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
-  <h1>Hello from GitHub Pages!</h1>
-  <p>This is my first static website hosted on GitHub.</p>
+  <h1>Hello from GitHub Pages with GSAP!</h1>
+  <p>This is my first animated static website.</p>
+
+  <script>
+    // Animate the h1 on page load
+    gsap.from("h1", { duration: 1.5, y: 50, opacity: 0, ease: "power2.out" });
+  </script>
 </body>
 </html>
